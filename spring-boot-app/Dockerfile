@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 
-RUN  apt-get update && apt install openjdk-17-jre -y
+RUN apt-get update && apt install openjdk-17-jre -y
 
-WORKDIR opt/app
+WORKDIR /opt/app
 
 ARG artifact=spring-boot-app/target/spring-boot-web.jar
 
