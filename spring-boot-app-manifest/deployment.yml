@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: elampari/java-cicd:replaceImageTag
+        image: elampari/java-cicd:8
         ports:
         - containerPort: 8080
