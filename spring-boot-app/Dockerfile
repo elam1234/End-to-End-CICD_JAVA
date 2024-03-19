@@ -4,7 +4,7 @@ RUN apt-get update && apt install openjdk-17-jre -y
 
 WORKDIR /opt/app
 
-ARG artifact=spring-boot-app/target/spring-boot-web.jar
+ARG artifact= /var/lib/jenkins/workspace/CICD_JAVA/spring-boot-app/target/spring-boot-web.jar
 
 COPY ${artifact} app.jar
 
